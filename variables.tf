@@ -5,26 +5,26 @@ variable "aws_region" {
 
 variable "key_name" { 
     description = " SSH keys to connect to ec2 instance" 
-    default     =  "HashTek_domain" 
+    default     =  "jenkins-key" 
 }
 
 variable "instance_type" { 
     description = "instance type for ec2" 
-    default     =  "t2.micro" 
+    default     =  "t2.medium" 
 }
 
 variable "security_group" { 
     description = "Name of security group" 
-    default     = "jenkins-sgroup-dec-2021" 
+    default     = "sg-0b9e5a9c7d727027b" 
 }
 
 variable "tag_name" { 
     description = "Tag Name of for Ec2 instance" 
-    default     = "my-ec2-instance" 
+    default     = "Jenkin-server" 
 } 
 variable "ami_id" { 
-    description = "AMI for Ubuntu Ec2 instance" 
-    default     = "ami-062df10d14676e201" 
+    description = "AMI for linux Ec2 instance" 
+    default     = "ami-067d1e60475437da2" 
 }
 variable "versioning" {
     type        = bool
