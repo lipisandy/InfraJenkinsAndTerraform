@@ -26,11 +26,6 @@ variable "ami_id" {
     description = "AMI for linux Ec2 instance" 
     default     = "ami-067d1e60475437da2" 
 }
-variable "versioning" {
-    type        = bool
-    description = "(Optional) A state of versioning."
-    default     = true
-}
 variable "acl" {
     type        = string
     description = " Defaults to private "
