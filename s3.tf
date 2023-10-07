@@ -1,10 +1,9 @@
-resource "aws_s3_bucket_versioning" "my-s3-bucket-versioning" {
+resource "aws_s3_bucket" "my-s3-bucket" {
   bucket = "your-bucket-name"
- acl = var.acl
   
-   versioning {
+  versioning {
     enabled = true
   }
   
-  tags = var.tags
+  acl    = var.acl
 }
